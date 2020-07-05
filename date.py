@@ -8,7 +8,3 @@ def date_calculator(json):
     
     return (date + datetime.timedelta(days=20))
     
-
-
-x=date_calculator('{\"date\":\"2020-02-20\"}')
-print (x)
