@@ -10,9 +10,10 @@ app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'akuro'
 
 CORS(app)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
 mysql = MySQL(app)
 
+@cross_origin()
 @app.route('/procesingEndpoint', methods=['POST'])
 def procesing_data():
     if(request.method) == 'POST':
