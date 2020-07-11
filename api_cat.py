@@ -7,4 +7,5 @@ def get_data_cat():
     print(data["text"])
 
 
+
 get_data_cat()
