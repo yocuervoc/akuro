@@ -10,7 +10,6 @@ app.config['MYSLQ_DB'] = 'akuro'
 
 mysql = MySQL(app)
 
-
 @app.route('/procesingEndpoint', methods=['POST'])
 def procesing_data():
     if(request.method) == 'POST':
